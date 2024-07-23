@@ -27,7 +27,7 @@ export default function BookingWidget({ place }) {
   const [bookingDetails, setBookingDetails] = useState("");
   const { user } = useContext(UserContext);
   const navigate = useNavigate();
-  const serviceId = "StayZen";
+  const serviceId = "stayzen";
 
   async function sendMailToHost(){
     const templateId = "template_host";

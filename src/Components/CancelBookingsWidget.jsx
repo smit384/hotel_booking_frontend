@@ -17,7 +17,7 @@ const CancelBookingsWidget = ({ placeId, bookingDetails, setBookingDetails, plac
   const nights = calculateNumberOfNights(checkIn, checkOut);
   const pricePerNight = (price / nights).toLocaleString("en-IN");
   const [modalOpen, setModalOpen] = useState(false);
-  const serviceId = "StayZen";
+  const serviceId = "stayzen";
   const {user} = useContext(UserContext);
 
   async function sendMailToHost(){
